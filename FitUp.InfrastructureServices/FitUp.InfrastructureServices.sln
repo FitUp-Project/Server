@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.PaymentsService", "FitUp.PaymentsService", "{ACA9D2D6-9A65-4EFD-B199-03E8266BC093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.IdentityService", "FitUp.IdentityService", "{849BA898-C084-454F-ADC5-C2171DFAC4C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.AdministrationService", "FitUp.AdministrationService", "{4644B2C6-1108-4016-BF0C-BAE546340EA3}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96BD5F6F-C133-4C38-AD82-3D361FDB7104}
+	EndGlobalSection
+EndGlobal

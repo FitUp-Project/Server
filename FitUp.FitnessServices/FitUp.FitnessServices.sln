@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.ExercisesService", "FitUp.ExercisesService", "{205780D6-A135-4F21-8A03-930000961EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.ProgramsService", "FitUp.ProgramsService", "{C62B0398-9A60-4F4E-82D3-AF64CD2BBF38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.UserProgressService", "FitUp.UserProgressService", "{1FB594D1-1526-4D38-938E-88BA08B7B091}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7468AF2-2A91-461B-B681-0EBEADC57D18}
+	EndGlobalSection
+EndGlobal
