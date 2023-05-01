@@ -35,6 +35,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp", "FitUp", "{A2C748AC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitUp.Domain", "FitUp\FitUp.Domain\FitUp.Domain.csproj", "{77ECD09C-618F-47C0-BA3F-6735130BD489}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp", "FitUp", "{A2C748AC-D130-43AE-BB29-CB844A53A19D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitUp.Domain", "FitUp\FitUp.Domain\FitUp.Domain.csproj", "{77ECD09C-618F-47C0-BA3F-6735130BD489}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitUp.ProgramsService.Domain", "FitUp.FitnessServices\FitUp.ProgramsService\FitUp.ProgramsService.Domain\FitUp.ProgramsService.Domain.csproj", "{9BDFF22D-B2B5-492D-ACE9-829BEF02F4AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
