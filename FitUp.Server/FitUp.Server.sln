@@ -29,7 +29,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.SocialInteractionServ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitUp.NewsfeedService", "FitUp.NewsfeedService", "{57849538-4186-4E6E-985E-93B180B26BBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitUp.ExercisesService.Domain", "FitUp.FitnessServices\FitUp.ExercisesService\FitUp.ExercisesService.Domain\FitUp.ExercisesService.Domain.csproj", "{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -43,6 +55,7 @@ Global
 		{A5741959-5EB5-4BA5-86C4-386FDFA297FD} = {2DAEBD36-F9BA-4286-9B4E-EE4083F90A9A}
 		{768FB254-63AF-4F47-B9CB-B42BBFBEC21B} = {CD6051DB-F664-49DA-8700-CC386686D006}
 		{57849538-4186-4E6E-985E-93B180B26BBD} = {CD6051DB-F664-49DA-8700-CC386686D006}
+		{94CA9380-C0E0-48A9-8BE9-EFB21949A3BF} = {4D00DFD9-A2B5-4A7D-BFFB-F629A0123357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8861F827-4BC8-454E-8833-179A55652CD7}
