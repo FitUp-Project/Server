@@ -1,4 +1,4 @@
-﻿namespace FitUp.ExercisesService.Domain.Shared.Models
+﻿namespace FitUp.Domain.Models
 {
     public abstract class BaseEntity<TId>
         where TId : struct

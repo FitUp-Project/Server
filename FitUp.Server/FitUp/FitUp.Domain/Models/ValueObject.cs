@@ -1,7 +1,7 @@
-﻿using System.Reflection;
-
-namespace FitUp.ExercisesService.Domain.Shared.Models
+﻿namespace FitUp.Domain.Models
 {
+    using System.Reflection;
+    
     public abstract class ValueObject
     {
         private readonly BindingFlags privateBindingFlags =
