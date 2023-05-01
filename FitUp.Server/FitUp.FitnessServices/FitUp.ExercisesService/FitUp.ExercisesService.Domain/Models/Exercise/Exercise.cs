@@ -2,7 +2,7 @@
 {
     using Models.Exercise;
     using Models.MuscleGroup;
-    using Shared.Models;
+    using FitUp.Domain.Models;
 
     public class Exercise : DeletableEntity<int>
     {

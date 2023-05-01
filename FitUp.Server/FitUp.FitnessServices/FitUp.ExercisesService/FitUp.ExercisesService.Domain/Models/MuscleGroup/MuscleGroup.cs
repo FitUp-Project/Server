@@ -1,6 +1,6 @@
 ﻿namespace FitUp.ExercisesService.Domain.Models.MuscleGroup
 {
-    using Shared.Models;
+    using FitUp.Domain.Models;
 
     public class MuscleGroup : BaseEntity<int>
     {
