@@ -1,0 +1,78 @@
+﻿using System.Reflection;
+
+namespace FitUp.ExercisesService.Domain.Shared.Models
+{
+    public abstract class ValueObject
+    {
+        private readonly BindingFlags privateBindingFlags =
+            BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public;
+
+        public override bool Equals(object? other)
+        {
+            if (other is null)
+            {
+                return false;
+            }
+
+            var thisType = this.GetType();
+            var otherType = other.GetType();
+
+            if (thisType != otherType)
+            {
+                return false;
+            }
+
+            var thisFields = thisType.GetFields();
+
+            foreach (FieldInfo field in thisFields)
+            {
+                var firstValue = field.GetValue(other);
+                var secondValue = field.GetValue(this);
+
+                if (firstValue == null && secondValue != null)
+                {
+                    return false;
+                }
+                else if (!firstValue.Equals(secondValue))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public override int GetHashCode()
+        {
+            var fields = this.GetFields();
+
+            const int startValue = 17;
+            const int multiplier = 59;
+
+            return fields
+                .Select(field => field.GetValue(this))
+                .Where(value => value != null)
+                .Aggregate(startValue, (current, value) => current * multiplier + value!.GetHashCode());
+        }
+
+        private IEnumerable<FieldInfo> GetFields()
+        {
+            var type = this.GetType();
+
+            var fields = new List<FieldInfo>();
+
+            while (type != typeof(object) && type != null)
+            {
+                fields.AddRange(type.GetFields(this.privateBindingFlags));
+
+                type = type.BaseType!;
+            }
+
+            return fields;
+        }
+
+        public static bool operator ==(ValueObject first, ValueObject second) => first.Equals(second);
+
+        public static bool operator !=(ValueObject first, ValueObject second) => !(first == second);
+    }
+}
