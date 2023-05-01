@@ -1,8 +1,8 @@
-﻿using System.Collections.Concurrent;
-using System.Reflection;
-
-namespace FitUp.ExercisesService.Domain.Shared.Models
+﻿namespace FitUp.Domain.Models
 {
+    using System.Collections.Concurrent;
+    using System.Reflection;
+
     public abstract class Enumeration : IComparable
     {
         private static readonly ConcurrentDictionary<Type, IEnumerable<object>> EnumCache

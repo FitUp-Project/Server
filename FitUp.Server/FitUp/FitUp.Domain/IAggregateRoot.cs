@@ -1,4 +1,4 @@
-﻿namespace FitUp.ExercisesService.Domain.Shared
+﻿namespace FitUp.Domain.Models
 {
     public interface IAggregateRoot
     {

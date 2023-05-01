@@ -1,6 +1,6 @@
 ﻿namespace FitUp.ExercisesService.Domain.Models.Exercise
 {
-    using Shared.Models;
+    using FitUp.Domain.Models;
 
     public class Video : ValueObject
     {
